@@ -1,10 +1,20 @@
-import "./App.css";
-import Header from "./Header/Header";
+import { Routes, Route } from 'react-router-dom';
+import Dashboard from './Dashboard/Dashboard';
+import Header from './Header/Header';
+import Reviews from "./Reviews/Reviews";
+import AboutMe from "./AboutMe/AboutMe";
 
-function App() {
+import './App.css';
+
+function App(): React.JSX.Element {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/about-me" element={<AboutMe />} />
+      </Routes>
     </div>
   );
 }

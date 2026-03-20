@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 
-function Dashboard() {
+function Dashboard(): React.JSX.Element {
   return (
     <div className="dashboard">
       <h1>El analista de Emojis: todo sobre los Emojis</h1>
